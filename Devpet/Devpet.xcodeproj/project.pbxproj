@@ -3,65 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2BB15BE252D8F1500353AC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB15BD252D8F1500353AC6 /* AppDelegate.swift */; };
-		F2BB15C0252D8F1500353AC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB15BF252D8F1500353AC6 /* ViewController.swift */; };
-		F2BB15C2252D8F1600353AC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BB15C1252D8F1600353AC6 /* Assets.xcassets */; };
-		F2BB15C5252D8F1600353AC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2BB15C3252D8F1600353AC6 /* Main.storyboard */; };
-		F2BB15D5252D9B3100353AC6 /* SnippetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BB15D4252D9B3100353AC6 /* SnippetViewController.swift */; };
+		F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D717225400C0E0093AFB1 /* AppDelegate.swift */; };
+		F23D717525400C0E0093AFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D717425400C0E0093AFB1 /* ViewController.swift */; };
+		F23D717725400C0E0093AFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D717625400C0E0093AFB1 /* Assets.xcassets */; };
+		F23D717A25400C0E0093AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D717825400C0E0093AFB1 /* Main.storyboard */; };
+		F23D718525400C840093AFB1 /* Popover in Frameworks */ = {isa = PBXBuildFile; productRef = F23D718425400C840093AFB1 /* Popover */; };
+		F23D7188254012E10093AFB1 /* DevpetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D7187254012E10093AFB1 /* DevpetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F2BB15BA252D8F1500353AC6 /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2BB15BD252D8F1500353AC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F2BB15BF252D8F1500353AC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F2BB15C1252D8F1600353AC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F2BB15C4252D8F1600353AC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2BB15C6252D8F1600353AC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2BB15C7252D8F1600353AC6 /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
-		F2BB15D4252D9B3100353AC6 /* SnippetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetViewController.swift; sourceTree = "<group>"; };
+		F23D716F25400C0E0093AFB1 /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F23D717225400C0E0093AFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F23D717425400C0E0093AFB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F23D717625400C0E0093AFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F23D717925400C0E0093AFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F23D717B25400C0E0093AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F23D717C25400C0E0093AFB1 /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
+		F23D7187254012E10093AFB1 /* DevpetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F2BB15B7252D8F1500353AC6 /* Frameworks */ = {
+		F23D716C25400C0E0093AFB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F23D718525400C840093AFB1 /* Popover in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F2BB15B1252D8F1500353AC6 = {
+		F23D716625400C0E0093AFB1 = {
 			isa = PBXGroup;
 			children = (
-				F2BB15BC252D8F1500353AC6 /* Devpet */,
-				F2BB15BB252D8F1500353AC6 /* Products */,
+				F23D717125400C0E0093AFB1 /* Devpet */,
+				F23D717025400C0E0093AFB1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F2BB15BB252D8F1500353AC6 /* Products */ = {
+		F23D717025400C0E0093AFB1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2BB15BA252D8F1500353AC6 /* Devpet.app */,
+				F23D716F25400C0E0093AFB1 /* Devpet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2BB15BC252D8F1500353AC6 /* Devpet */ = {
+		F23D717125400C0E0093AFB1 /* Devpet */ = {
 			isa = PBXGroup;
 			children = (
-				F2BB15BD252D8F1500353AC6 /* AppDelegate.swift */,
-				F2BB15BF252D8F1500353AC6 /* ViewController.swift */,
-				F2BB15C1252D8F1600353AC6 /* Assets.xcassets */,
-				F2BB15C3252D8F1600353AC6 /* Main.storyboard */,
-				F2BB15C6252D8F1600353AC6 /* Info.plist */,
-				F2BB15C7252D8F1600353AC6 /* Devpet.entitlements */,
-				F2BB15D4252D9B3100353AC6 /* SnippetViewController.swift */,
+				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
+				F23D717425400C0E0093AFB1 /* ViewController.swift */,
+				F23D717625400C0E0093AFB1 /* Assets.xcassets */,
+				F23D717825400C0E0093AFB1 /* Main.storyboard */,
+				F23D717B25400C0E0093AFB1 /* Info.plist */,
+				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
+				F23D7187254012E10093AFB1 /* DevpetViewController.swift */,
 			);
 			path = Devpet;
 			sourceTree = "<group>";
@@ -69,38 +71,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2BB15B9252D8F1500353AC6 /* Devpet */ = {
+		F23D716E25400C0E0093AFB1 /* Devpet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2BB15CA252D8F1600353AC6 /* Build configuration list for PBXNativeTarget "Devpet" */;
+			buildConfigurationList = F23D717F25400C0E0093AFB1 /* Build configuration list for PBXNativeTarget "Devpet" */;
 			buildPhases = (
-				F2BB15B6252D8F1500353AC6 /* Sources */,
-				F2BB15B7252D8F1500353AC6 /* Frameworks */,
-				F2BB15B8252D8F1500353AC6 /* Resources */,
+				F23D716B25400C0E0093AFB1 /* Sources */,
+				F23D716C25400C0E0093AFB1 /* Frameworks */,
+				F23D716D25400C0E0093AFB1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Devpet;
+			packageProductDependencies = (
+				F23D718425400C840093AFB1 /* Popover */,
+			);
 			productName = Devpet;
-			productReference = F2BB15BA252D8F1500353AC6 /* Devpet.app */;
+			productReference = F23D716F25400C0E0093AFB1 /* Devpet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F2BB15B2252D8F1500353AC6 /* Project object */ = {
+		F23D716725400C0E0093AFB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
-					F2BB15B9252D8F1500353AC6 = {
+					F23D716E25400C0E0093AFB1 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
 			};
-			buildConfigurationList = F2BB15B5252D8F1500353AC6 /* Build configuration list for PBXProject "Devpet" */;
+			buildConfigurationList = F23D716A25400C0E0093AFB1 /* Build configuration list for PBXProject "Devpet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,46 +113,49 @@
 				en,
 				Base,
 			);
-			mainGroup = F2BB15B1252D8F1500353AC6;
-			productRefGroup = F2BB15BB252D8F1500353AC6 /* Products */;
+			mainGroup = F23D716625400C0E0093AFB1;
+			packageReferences = (
+				F23D718325400C840093AFB1 /* XCRemoteSwiftPackageReference "Popover" */,
+			);
+			productRefGroup = F23D717025400C0E0093AFB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2BB15B9252D8F1500353AC6 /* Devpet */,
+				F23D716E25400C0E0093AFB1 /* Devpet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F2BB15B8252D8F1500353AC6 /* Resources */ = {
+		F23D716D25400C0E0093AFB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BB15C2252D8F1600353AC6 /* Assets.xcassets in Resources */,
-				F2BB15C5252D8F1600353AC6 /* Main.storyboard in Resources */,
+				F23D717725400C0E0093AFB1 /* Assets.xcassets in Resources */,
+				F23D717A25400C0E0093AFB1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F2BB15B6252D8F1500353AC6 /* Sources */ = {
+		F23D716B25400C0E0093AFB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BB15D5252D9B3100353AC6 /* SnippetViewController.swift in Sources */,
-				F2BB15C0252D8F1500353AC6 /* ViewController.swift in Sources */,
-				F2BB15BE252D8F1500353AC6 /* AppDelegate.swift in Sources */,
+				F23D7188254012E10093AFB1 /* DevpetViewController.swift in Sources */,
+				F23D717525400C0E0093AFB1 /* ViewController.swift in Sources */,
+				F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F2BB15C3252D8F1600353AC6 /* Main.storyboard */ = {
+		F23D717825400C0E0093AFB1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F2BB15C4252D8F1600353AC6 /* Base */,
+				F23D717925400C0E0093AFB1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -155,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F2BB15C8252D8F1600353AC6 /* Debug */ = {
+		F23D717D25400C0E0093AFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -216,7 +224,7 @@
 			};
 			name = Debug;
 		};
-		F2BB15C9252D8F1600353AC6 /* Release */ = {
+		F23D717E25400C0E0093AFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +278,7 @@
 			};
 			name = Release;
 		};
-		F2BB15CB252D8F1600353AC6 /* Debug */ = {
+		F23D718025400C0E0093AFB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -291,7 +299,7 @@
 			};
 			name = Debug;
 		};
-		F2BB15CC252D8F1600353AC6 /* Release */ = {
+		F23D718125400C0E0093AFB1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -315,25 +323,44 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2BB15B5252D8F1500353AC6 /* Build configuration list for PBXProject "Devpet" */ = {
+		F23D716A25400C0E0093AFB1 /* Build configuration list for PBXProject "Devpet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2BB15C8252D8F1600353AC6 /* Debug */,
-				F2BB15C9252D8F1600353AC6 /* Release */,
+				F23D717D25400C0E0093AFB1 /* Debug */,
+				F23D717E25400C0E0093AFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2BB15CA252D8F1600353AC6 /* Build configuration list for PBXNativeTarget "Devpet" */ = {
+		F23D717F25400C0E0093AFB1 /* Build configuration list for PBXNativeTarget "Devpet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2BB15CB252D8F1600353AC6 /* Debug */,
-				F2BB15CC252D8F1600353AC6 /* Release */,
+				F23D718025400C0E0093AFB1 /* Debug */,
+				F23D718125400C0E0093AFB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F23D718325400C840093AFB1 /* XCRemoteSwiftPackageReference "Popover" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iSapozhnik/Popover";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F23D718425400C840093AFB1 /* Popover */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F23D718325400C840093AFB1 /* XCRemoteSwiftPackageReference "Popover" */;
+			productName = Popover;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = F2BB15B2252D8F1500353AC6 /* Project object */;
+	rootObject = F23D716725400C0E0093AFB1 /* Project object */;
 }

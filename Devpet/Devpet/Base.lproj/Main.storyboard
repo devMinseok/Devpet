@@ -681,10 +681,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Snippet View Controller-->
+        <!--Devpet View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController storyboardIdentifier="SnippetViewController" id="XfG-lQ-9wD" customClass="SnippetViewController" customModule="Devpet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DevpetViewController" id="XfG-lQ-9wD" customClass="DevpetViewController" customModule="Devpet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
