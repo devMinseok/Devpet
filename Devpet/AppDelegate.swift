@@ -6,7 +6,6 @@
 //
 
 import Cocoa
-import Popover
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
