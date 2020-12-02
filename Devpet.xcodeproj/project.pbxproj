@@ -3,16 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		42DF982518B2F725A94EEEC3 /* Pods_Devpet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F1726A9DAF275A08DC5FD /* Pods_Devpet.framework */; };
 		F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D717225400C0E0093AFB1 /* AppDelegate.swift */; };
-		F23D717525400C0E0093AFB1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D717425400C0E0093AFB1 /* ViewController.swift */; };
 		F23D717725400C0E0093AFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D717625400C0E0093AFB1 /* Assets.xcassets */; };
 		F23D717A25400C0E0093AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D717825400C0E0093AFB1 /* Main.storyboard */; };
-		F23D7188254012E10093AFB1 /* DevpetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D7187254012E10093AFB1 /* DevpetViewController.swift */; };
+		F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D7187254012E10093AFB1 /* SnippetsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +20,11 @@
 		7ECB7062E9A593641382DDB7 /* Pods-Devpet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Devpet.release.xcconfig"; path = "Target Support Files/Pods-Devpet/Pods-Devpet.release.xcconfig"; sourceTree = "<group>"; };
 		F23D716F25400C0E0093AFB1 /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F23D717225400C0E0093AFB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F23D717425400C0E0093AFB1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F23D717625400C0E0093AFB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F23D717925400C0E0093AFB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F23D717B25400C0E0093AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D717C25400C0E0093AFB1 /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
-		F23D7187254012E10093AFB1 /* DevpetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetViewController.swift; sourceTree = "<group>"; };
+		F23D7187254012E10093AFB1 /* SnippetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +53,6 @@
 				24F7138A411321C054693244 /* Pods-Devpet.debug.xcconfig */,
 				7ECB7062E9A593641382DDB7 /* Pods-Devpet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,12 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
-				F23D717425400C0E0093AFB1 /* ViewController.swift */,
 				F23D717625400C0E0093AFB1 /* Assets.xcassets */,
+				F23D7187254012E10093AFB1 /* SnippetsViewController.swift */,
 				F23D717825400C0E0093AFB1 /* Main.storyboard */,
 				F23D717B25400C0E0093AFB1 /* Info.plist */,
 				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
-				F23D7187254012E10093AFB1 /* DevpetViewController.swift */,
 			);
 			path = Devpet;
 			sourceTree = "<group>";
@@ -204,8 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F23D7188254012E10093AFB1 /* DevpetViewController.swift in Sources */,
-				F23D717525400C0E0093AFB1 /* ViewController.swift in Sources */,
+				F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */,
 				F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

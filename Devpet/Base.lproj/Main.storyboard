@@ -681,47 +681,57 @@
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Devpet View Controller-->
+        <!--Snippets View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController storyboardIdentifier="DevpetViewController" id="XfG-lQ-9wD" customClass="DevpetViewController" customModule="Devpet" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SnippetsViewController" id="XfG-lQ-9wD" customClass="SnippetsViewController" customModule="Devpet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T7-gS-T6z">
-                                <rect key="frame" x="69" y="67" width="240" height="135"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <clipView key="contentView" drawsBackground="NO" id="47T-4E-9co">
-                                    <rect key="frame" x="0.0" y="0.0" width="240" height="135"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="ZQp-Y2-Xjm">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="135"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="240" height="135"/>
-                                            <size key="maxSize" width="240" height="10000000"/>
-                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        </textView>
-                                    </subviews>
-                                </clipView>
-                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="hdI-S4-fYp">
-                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="GGd-8P-BW1">
-                                    <rect key="frame" x="224" y="0.0" width="16" height="135"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </scroller>
-                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZDV-yd-MXl">
+                                <rect key="frame" x="5" y="2.5" width="30.5" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DWw-Pi-o8J"/>
+                                    <constraint firstAttribute="width" constant="30" id="P3c-6H-oNA"/>
+                                </constraints>
+                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="plus" catalog="system" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" id="nFV-yQ-kOx">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="20"/>
+                                </buttonCell>
+                                <color key="contentTintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </button>
+                            <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="IqX-u8-1tl">
+                                <rect key="frame" x="159" y="8" width="33" height="21"/>
+                                <popUpButtonCell key="cell" type="smallSquare" bezelStyle="smallSquare" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" state="on" inset="2" pullsDown="YES" arrowPosition="noArrow" selectedItem="wPP-kr-bMs" id="yk4-Sp-sKm">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="17"/>
+                                    <menu key="menu" id="QbR-fd-9jF">
+                                        <items>
+                                            <menuItem state="on" image="gear" catalog="system" hidden="YES" id="wPP-kr-bMs"/>
+                                            <menuItem title="Item 2" id="MWA-Ni-2fw"/>
+                                            <menuItem title="Item 3" id="w4F-iG-EeG"/>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                                <color key="contentTintColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </popUpButton>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="IqX-u8-1tl" secondAttribute="trailing" constant="8" id="QtV-wv-jse"/>
+                            <constraint firstItem="ZDV-yd-MXl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="5" id="Taq-QW-j4V"/>
+                            <constraint firstAttribute="bottom" secondItem="IqX-u8-1tl" secondAttribute="bottom" constant="8" id="dhA-an-cDr"/>
+                            <constraint firstAttribute="bottom" secondItem="ZDV-yd-MXl" secondAttribute="bottom" constant="5" id="oED-qx-u0q"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="17" height="17"/>
+        <image name="plus" catalog="system" width="14" height="13"/>
+    </resources>
 </document>
