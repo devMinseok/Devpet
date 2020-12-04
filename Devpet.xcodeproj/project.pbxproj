@@ -12,6 +12,8 @@
 		F23D717725400C0E0093AFB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F23D717625400C0E0093AFB1 /* Assets.xcassets */; };
 		F23D717A25400C0E0093AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D717825400C0E0093AFB1 /* Main.storyboard */; };
 		F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D7187254012E10093AFB1 /* SnippetsViewController.swift */; };
+		F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D0BC02579BF03006C8F7C /* SnippetCell.swift */; };
+		F277AA49257A2463004CB245 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA48257A2463004CB245 /* NSView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		F23D717B25400C0E0093AFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F23D717C25400C0E0093AFB1 /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
 		F23D7187254012E10093AFB1 /* SnippetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsViewController.swift; sourceTree = "<group>"; };
+		F25D0BC02579BF03006C8F7C /* SnippetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetCell.swift; sourceTree = "<group>"; };
+		F277AA48257A2463004CB245 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,14 +81,24 @@
 		F23D717125400C0E0093AFB1 /* Devpet */ = {
 			isa = PBXGroup;
 			children = (
+				F277AA47257A244E004CB245 /* Extension */,
 				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
 				F23D717625400C0E0093AFB1 /* Assets.xcassets */,
+				F25D0BC02579BF03006C8F7C /* SnippetCell.swift */,
 				F23D7187254012E10093AFB1 /* SnippetsViewController.swift */,
 				F23D717825400C0E0093AFB1 /* Main.storyboard */,
 				F23D717B25400C0E0093AFB1 /* Info.plist */,
 				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
 			);
 			path = Devpet;
+			sourceTree = "<group>";
+		};
+		F277AA47257A244E004CB245 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F277AA48257A2463004CB245 /* NSView.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */,
 				F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */,
 				F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */,
+				F277AA49257A2463004CB245 /* NSView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
