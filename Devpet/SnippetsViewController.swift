@@ -6,16 +6,19 @@
 //
 
 import Cocoa
+import RealmSwift
 
 class SnippetsViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView!
     
-    let snippets = [
-        ["name":"MVVM", "language":"Swift", "isFavorite":true, "data":"test1"],
-        ["name":"MVC", "language":"Swift", "isFavorite":false, "data":"test2"],
-        ["name":"MVP", "language":"Swift", "isFavorite":false, "data":"test3"]
-    ]
+    var snippets: Results<Snippet>?
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+        self.snippets = DatabaseManager.shared.searchByType(type: Snippet())
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,23 +39,16 @@ class SnippetsViewController: NSViewController {
 extension SnippetsViewController: NSTableViewDelegate, NSTableViewDataSource {
     
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return self.snippets.count
+        return self.snippets?.count ?? 0
     }
     
     // 셀에 데이터 넣기
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
-        guard let snippetCell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SnippetCell"), owner: self) as? SnippetCell else { return nil }
-        
-        snippetCell.snippetNameLabel.stringValue = self.snippets[row]["name"] as! String
-        snippetCell.languageLabel.stringValue = self.snippets[row]["language"] as! String
-        snippetCell.snippetData = self.snippets[row]["data"] as? String
-        
-        return snippetCell
+        guard let cell = tableView.makeView(withIdentifier: NSUserInterfaceItemIdentifier(rawValue: "SnippetCell"), owner: self) as? SnippetCell else { return nil }
+        cell.setData(snippet: self.snippets?[row] ?? Snippet())
+        return cell
     }
     
-//    func tableView(_ tableView: NSTableView, didClick tableColumn: NSTableColumn) {
-//        tableView.deselectRow(tableView.selectedRow)
-//    }
     func tableViewSelectionDidChange(_ notification: Notification) {
         let selectedRow = notification.object as! NSTableView
         tableView.deselectRow(selectedRow.selectedRow)
