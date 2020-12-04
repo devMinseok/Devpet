@@ -15,6 +15,7 @@
 		F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D0BC02579BF03006C8F7C /* SnippetCell.swift */; };
 		F277AA49257A2463004CB245 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA48257A2463004CB245 /* NSView.swift */; };
 		F277AA52257A4788004CB245 /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA51257A4788004CB245 /* Snippet.swift */; };
+		F277AA5C257A697A004CB245 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA5B257A697A004CB245 /* DatabaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		F25D0BC02579BF03006C8F7C /* SnippetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetCell.swift; sourceTree = "<group>"; };
 		F277AA48257A2463004CB245 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		F277AA51257A4788004CB245 /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
+		F277AA5B257A697A004CB245 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 		F23D717125400C0E0093AFB1 /* Devpet */ = {
 			isa = PBXGroup;
 			children = (
+				F277AA5A257A6968004CB245 /* Manager */,
 				F277AA50257A4763004CB245 /* Model */,
 				F277AA47257A244E004CB245 /* Extension */,
 				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
@@ -110,6 +113,14 @@
 				F277AA51257A4788004CB245 /* Snippet.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F277AA5A257A6968004CB245 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F277AA5B257A697A004CB245 /* DatabaseManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +238,7 @@
 			files = (
 				F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */,
 				F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */,
+				F277AA5C257A697A004CB245 /* DatabaseManager.swift in Sources */,
 				F277AA52257A4788004CB245 /* Snippet.swift in Sources */,
 				F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */,
 				F277AA49257A2463004CB245 /* NSView.swift in Sources */,
