@@ -7,5 +7,6 @@ target 'Devpet' do
 
   # Pods for Devpet
   pod 'Sourceful'
+  pod 'RealmSwift'
 
 end
