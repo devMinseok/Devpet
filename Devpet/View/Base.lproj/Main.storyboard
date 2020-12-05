@@ -870,6 +870,129 @@
             </objects>
             <point key="canvasLocation" x="74" y="323"/>
         </scene>
+        <!--Snippet Detail View Controller-->
+        <scene sceneID="bbQ-dw-Y7O">
+            <objects>
+                <viewController storyboardIdentifier="SnippetDetailViewController" id="hTI-e6-my9" customClass="SnippetDetailViewController" customModule="Devpet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="BAK-m7-GjL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="j7Q-D3-01x" customClass="SyntaxTextView" customModule="Sourceful">
+                                <rect key="frame" x="0.0" y="40" width="600" height="316"/>
+                            </customView>
+                            <stackView distribution="fill" orientation="horizontal" alignment="bottom" spacing="14" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IUF-FV-VyD">
+                                <rect key="frame" x="20" y="395" width="129" height="35"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="epp-He-nHb">
+                                        <rect key="frame" x="-2" y="0.0" width="81" height="35"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="wbJ-Us-F6e">
+                                            <font key="font" metaFont="systemBold" size="30"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dIQ-N1-yFN">
+                                        <rect key="frame" x="89" y="0.0" width="42" height="19"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="Guc-yg-dDD">
+                                            <font key="font" metaFont="system" size="15"/>
+                                            <color key="textColor" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kgj-La-cXS">
+                                <rect key="frame" x="18" y="366" width="504" height="24"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="8qN-4J-8UZ">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button translatesAutoresizingMaskIntoConstraints="NO" id="6Rj-6d-Hdv">
+                                <rect key="frame" x="530" y="377" width="50" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="6Ub-e3-X4e"/>
+                                    <constraint firstAttribute="height" constant="50" id="iF4-28-Hqv"/>
+                                </constraints>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="star.circle.fill" catalog="system" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="zXc-Cn-ves">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" name="AccentColor"/>
+                                <connections>
+                                    <action selector="favoriteButton:" target="hTI-e6-my9" id="2z2-cQ-vzX"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZMq-zR-upo">
+                                <rect key="frame" x="463" y="3" width="74" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="3EA-Hb-y4L"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="JQt-P9-gOk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="cancelButton:" target="hTI-e6-my9" id="lo0-0w-NgJ"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-dz-H1c">
+                                <rect key="frame" x="533" y="3" width="64" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="QRO-9w-Bbo"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Delete" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lC2-PA-36D">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="deleteButton:" target="hTI-e6-my9" id="c1A-wt-hdA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="nPo-dz-H1c" secondAttribute="bottom" constant="10" id="0S5-1I-K2r"/>
+                            <constraint firstAttribute="trailing" secondItem="6Rj-6d-Hdv" secondAttribute="trailing" constant="20" id="5yU-bo-eG2"/>
+                            <constraint firstItem="ZMq-zR-upo" firstAttribute="top" secondItem="j7Q-D3-01x" secondAttribute="bottom" constant="10" id="SmO-Dg-ECJ"/>
+                            <constraint firstItem="nPo-dz-H1c" firstAttribute="leading" secondItem="ZMq-zR-upo" secondAttribute="trailing" constant="10" id="Ttd-ez-kTS"/>
+                            <constraint firstItem="Kgj-La-cXS" firstAttribute="top" secondItem="epp-He-nHb" secondAttribute="bottom" constant="5" id="Vd1-Gc-TNA"/>
+                            <constraint firstItem="j7Q-D3-01x" firstAttribute="top" secondItem="Kgj-La-cXS" secondAttribute="bottom" constant="10" id="WE8-c4-hwF"/>
+                            <constraint firstItem="IUF-FV-VyD" firstAttribute="top" secondItem="BAK-m7-GjL" secondAttribute="top" constant="20" id="Y2e-oI-qsx"/>
+                            <constraint firstAttribute="trailing" secondItem="j7Q-D3-01x" secondAttribute="trailing" id="eWD-Se-8b4"/>
+                            <constraint firstItem="6Rj-6d-Hdv" firstAttribute="top" secondItem="BAK-m7-GjL" secondAttribute="top" constant="20" id="lYl-ln-7jW"/>
+                            <constraint firstAttribute="trailing" secondItem="nPo-dz-H1c" secondAttribute="trailing" constant="10" id="lbp-6G-3Bi"/>
+                            <constraint firstItem="6Rj-6d-Hdv" firstAttribute="leading" secondItem="Kgj-La-cXS" secondAttribute="trailing" constant="10" id="n14-JQ-xKd"/>
+                            <constraint firstItem="j7Q-D3-01x" firstAttribute="leading" secondItem="BAK-m7-GjL" secondAttribute="leading" id="wDa-uL-AdU"/>
+                            <constraint firstItem="Kgj-La-cXS" firstAttribute="leading" secondItem="epp-He-nHb" secondAttribute="leading" id="wqn-9E-9C0"/>
+                            <constraint firstItem="IUF-FV-VyD" firstAttribute="leading" secondItem="BAK-m7-GjL" secondAttribute="leading" constant="20" id="wuR-4B-tTH"/>
+                            <constraint firstAttribute="bottom" secondItem="ZMq-zR-upo" secondAttribute="bottom" constant="10" id="zF6-f4-No8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Kgj-La-cXS" id="OlI-f1-ZfV"/>
+                        <outlet property="favoriteButton" destination="6Rj-6d-Hdv" id="7cd-2j-Gh6"/>
+                        <outlet property="languageLabel" destination="dIQ-N1-yFN" id="klm-PJ-AqV"/>
+                        <outlet property="nameLabel" destination="epp-He-nHb" id="yXd-Ut-oSM"/>
+                        <outlet property="syntaxTextView" destination="j7Q-D3-01x" id="wjh-44-Nbv"/>
+                    </connections>
+                </viewController>
+                <customObject id="7Mi-tA-B91" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="323"/>
+        </scene>
         <!--Add Snippet View Controller-->
         <scene sceneID="2vd-FX-HzC">
             <objects>
