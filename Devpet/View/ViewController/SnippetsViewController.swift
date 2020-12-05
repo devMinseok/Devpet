@@ -14,14 +14,12 @@ class SnippetsViewController: NSViewController {
     @IBOutlet weak var addButton: NSButton!
     
     var snippets: Results<Snippet>?
-    
     let popover = NSPopover()
-    var addSnippetViewController: AddSnippetViewController!
     
     override func viewWillAppear() {
         super.viewWillAppear()
         
-        self.snippets = DatabaseManager.shared.searchByType(type: Snippet())
+        self.tableView.reloadData()
     }
     
     override func viewDidLoad() {
@@ -30,9 +28,7 @@ class SnippetsViewController: NSViewController {
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        addSnippetViewController = AddSnippetViewController.instantiateViewController("AddSnippetViewController")
-        popover.contentViewController = addSnippetViewController
-        popover.behavior = .semitransient
+        self.snippets = DatabaseManager.shared.searchByType(type: Snippet())
     }
     
     override func awakeFromNib() {
@@ -46,6 +42,14 @@ class SnippetsViewController: NSViewController {
         if popover.isShown {
             popover.performClose(sender)
         } else {
+            let viewController: AddSnippetViewController =  AddSnippetViewController.instantiateViewController("AddSnippetViewController")
+            
+            viewController.rootPopover = self.popover
+            viewController.rootTableView = self.tableView
+            
+            popover.contentViewController = viewController
+            popover.behavior = .semitransient
+            
             popover.show(relativeTo: addButton.bounds, of: addButton, preferredEdge: .minX)
         }
     }
@@ -67,5 +71,16 @@ extension SnippetsViewController: NSTableViewDelegate, NSTableViewDataSource {
     func tableViewSelectionDidChange(_ notification: Notification) {
         let selectedRow = notification.object as! NSTableView
         tableView.deselectRow(selectedRow.selectedRow)
+    }
+    
+    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
+        
+        let viewController: SnippetDetailViewController = SnippetDetailViewController.instantiateViewController("SnippetDetailViewController")
+
+        viewController.snippetData = self.snippets?[row]
+        viewController.rootTableView = self.tableView
+        
+        self.presentAsModalWindow(viewController)
+        return true
     }
 }
