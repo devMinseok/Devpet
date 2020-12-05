@@ -13,6 +13,8 @@
 		F23D717A25400C0E0093AFB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F23D717825400C0E0093AFB1 /* Main.storyboard */; };
 		F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23D7187254012E10093AFB1 /* SnippetsViewController.swift */; };
 		F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25D0BC02579BF03006C8F7C /* SnippetCell.swift */; };
+		F2693D57257B5A79005210CE /* AddSnippetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2693D56257B5A79005210CE /* AddSnippetViewController.swift */; };
+		F2693D5A257B5CB2005210CE /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2693D59257B5CB2005210CE /* NSViewController.swift */; };
 		F277AA49257A2463004CB245 /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA48257A2463004CB245 /* NSView.swift */; };
 		F277AA52257A4788004CB245 /* Snippet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA51257A4788004CB245 /* Snippet.swift */; };
 		F277AA5C257A697A004CB245 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F277AA5B257A697A004CB245 /* DatabaseManager.swift */; };
@@ -30,6 +32,8 @@
 		F23D717C25400C0E0093AFB1 /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
 		F23D7187254012E10093AFB1 /* SnippetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsViewController.swift; sourceTree = "<group>"; };
 		F25D0BC02579BF03006C8F7C /* SnippetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetCell.swift; sourceTree = "<group>"; };
+		F2693D56257B5A79005210CE /* AddSnippetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSnippetViewController.swift; sourceTree = "<group>"; };
+		F2693D59257B5CB2005210CE /* NSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSViewController.swift; sourceTree = "<group>"; };
 		F277AA48257A2463004CB245 /* NSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSView.swift; sourceTree = "<group>"; };
 		F277AA51257A4788004CB245 /* Snippet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snippet.swift; sourceTree = "<group>"; };
 		F277AA5B257A697A004CB245 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 				F23D717825400C0E0093AFB1 /* Main.storyboard */,
 				F23D717B25400C0E0093AFB1 /* Info.plist */,
 				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
+				F2693D56257B5A79005210CE /* AddSnippetViewController.swift */,
 			);
 			path = Devpet;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				F277AA48257A2463004CB245 /* NSView.swift */,
+				F2693D59257B5CB2005210CE /* NSViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -237,9 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25D0BC12579BF03006C8F7C /* SnippetCell.swift in Sources */,
+				F2693D5A257B5CB2005210CE /* NSViewController.swift in Sources */,
 				F23D7188254012E10093AFB1 /* SnippetsViewController.swift in Sources */,
 				F277AA5C257A697A004CB245 /* DatabaseManager.swift in Sources */,
 				F277AA52257A4788004CB245 /* Snippet.swift in Sources */,
+				F2693D57257B5A79005210CE /* AddSnippetViewController.swift in Sources */,
 				F23D717325400C0E0093AFB1 /* AppDelegate.swift in Sources */,
 				F277AA49257A2463004CB245 /* NSView.swift in Sources */,
 			);

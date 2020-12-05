@@ -11,8 +11,12 @@ import RealmSwift
 class SnippetsViewController: NSViewController {
     
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var addButton: NSButton!
     
     var snippets: Results<Snippet>?
+    
+    let popover = NSPopover()
+    var addSnippetViewController: AddSnippetViewController!
     
     override func viewWillAppear() {
         super.viewWillAppear()
@@ -27,11 +31,23 @@ class SnippetsViewController: NSViewController {
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+        
+        addSnippetViewController = AddSnippetViewController.instantiateViewController("AddSnippetViewController")
+        popover.contentViewController = addSnippetViewController
+        popover.behavior = .semitransient
     }
     
     override func awakeFromNib() {
         if self.view.layer != nil {
             self.view.layer?.backgroundColor = NSColor.white.cgColor
+        }
+    }
+    
+    @IBAction func addButton(_ sender: Any) {
+        if popover.isShown {
+            popover.performClose(sender)
+        } else {
+            popover.show(relativeTo: addButton.bounds, of: addButton, preferredEdge: .minX)
         }
     }
 }
@@ -52,17 +68,5 @@ extension SnippetsViewController: NSTableViewDelegate, NSTableViewDataSource {
     func tableViewSelectionDidChange(_ notification: Notification) {
         let selectedRow = notification.object as! NSTableView
         tableView.deselectRow(selectedRow.selectedRow)
-    }
-}
-
-extension SnippetsViewController {
-    // MARK: Storyboard instantiation
-    static func freshController() -> SnippetsViewController {
-        let storyboard = NSStoryboard(name: NSStoryboard.Name("Main"), bundle: nil)
-        let identifier = NSStoryboard.SceneIdentifier("SnippetsViewController")
-        guard let viewcontroller = storyboard.instantiateController(withIdentifier: identifier) as? SnippetsViewController else {
-            fatalError("Check Main.storyboard")
-        }
-        return viewcontroller
     }
 }
