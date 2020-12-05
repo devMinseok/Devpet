@@ -899,6 +899,9 @@
 Gw
 </string>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="cancelButton:" target="xsP-1s-Mz4" id="hrD-3H-iPk"/>
+                                        </connections>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k4K-Bv-cfG">
                                         <rect key="frame" x="63" y="-7" width="64" height="32"/>
@@ -909,6 +912,9 @@ Gw
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
+                                        <connections>
+                                            <action selector="saveButton:" target="xsP-1s-Mz4" id="ggx-NM-fln"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <visibilityPriorities>
@@ -1042,6 +1048,12 @@ Gw
                             <constraint firstAttribute="trailing" secondItem="Xcc-ss-Jd7" secondAttribute="trailing" id="zVK-JL-zZc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionField" destination="WLa-V2-Bjn" id="0GH-EE-5pu"/>
+                        <outlet property="languageField" destination="BHL-yE-Xiu" id="oLC-Hu-atj"/>
+                        <outlet property="nameField" destination="N38-kC-n25" id="CEE-8v-Yd2"/>
+                        <outlet property="syntaxTextView" destination="Xcc-ss-Jd7" id="ttB-8k-bsY"/>
+                    </connections>
                 </viewController>
                 <customObject id="utf-qt-AHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
