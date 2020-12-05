@@ -7,6 +7,7 @@
 
 import Cocoa
 import Sourceful
+import RealmSwift
 
 class AddSnippetViewController: NSViewController {
     
@@ -17,6 +18,8 @@ class AddSnippetViewController: NSViewController {
     @IBOutlet weak var syntaxTextView: SyntaxTextView!
     
     let lexer = SwiftLexer()
+    var rootPopover: NSPopover?
+    var rootTableView: NSTableView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,10 +46,12 @@ class AddSnippetViewController: NSViewController {
                               data: syntaxTextView.text)
         
         DatabaseManager.shared.add(snippet)
+        rootTableView?.reloadData()
+        rootPopover?.performClose(sender)
     }
     
     @IBAction func cancelButton(_ sender: Any) {
-        
+        rootPopover?.performClose(sender)
     }
 }
 
