@@ -89,19 +89,51 @@
 		F23D717125400C0E0093AFB1 /* Devpet */ = {
 			isa = PBXGroup;
 			children = (
+				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
+				F277AA47257A244E004CB245 /* Extension */,
 				F277AA5A257A6968004CB245 /* Manager */,
 				F277AA50257A4763004CB245 /* Model */,
-				F277AA47257A244E004CB245 /* Extension */,
-				F23D717225400C0E0093AFB1 /* AppDelegate.swift */,
-				F23D717625400C0E0093AFB1 /* Assets.xcassets */,
-				F25D0BC02579BF03006C8F7C /* SnippetCell.swift */,
-				F23D7187254012E10093AFB1 /* SnippetsViewController.swift */,
-				F23D717825400C0E0093AFB1 /* Main.storyboard */,
-				F23D717B25400C0E0093AFB1 /* Info.plist */,
-				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
-				F2693D56257B5A79005210CE /* AddSnippetViewController.swift */,
+				F2693D5F257B6357005210CE /* View */,
+				F2693D62257B63AD005210CE /* Resource */,
 			);
 			path = Devpet;
+			sourceTree = "<group>";
+		};
+		F2693D5F257B6357005210CE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F23D717825400C0E0093AFB1 /* Main.storyboard */,
+				F2693D61257B6364005210CE /* ViewController */,
+				F2693D60257B6360005210CE /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2693D60257B6360005210CE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F25D0BC02579BF03006C8F7C /* SnippetCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		F2693D61257B6364005210CE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F23D7187254012E10093AFB1 /* SnippetsViewController.swift */,
+				F2693D56257B5A79005210CE /* AddSnippetViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F2693D62257B63AD005210CE /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F23D717C25400C0E0093AFB1 /* Devpet.entitlements */,
+				F23D717B25400C0E0093AFB1 /* Info.plist */,
+				F23D717625400C0E0093AFB1 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		F277AA47257A244E004CB245 /* Extension */ = {
@@ -388,12 +420,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Devpet/Devpet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Devpet/Resource/Devpet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Devpet/Info.plist;
+				INFOPLIST_FILE = Devpet/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -410,12 +442,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Devpet/Devpet.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Devpet/Resource/Devpet.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
 				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = Devpet/Info.plist;
+				INFOPLIST_FILE = Devpet/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

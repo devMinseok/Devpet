@@ -27,8 +27,6 @@ class SnippetsViewController: NSViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.wantsLayer = true
-        
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
@@ -38,6 +36,7 @@ class SnippetsViewController: NSViewController {
     }
     
     override func awakeFromNib() {
+        self.view.wantsLayer = true
         if self.view.layer != nil {
             self.view.layer?.backgroundColor = NSColor.white.cgColor
         }
