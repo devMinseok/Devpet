@@ -6,7 +6,14 @@ target 'Devpet' do
   use_frameworks!
 
   # Pods for Devpet
-  pod 'Sourceful'
+  
+  # Rx
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
+  # DataBase
   pod 'RealmSwift'
-
+  
+  # UI
+  pod 'Sourceful'
 end
