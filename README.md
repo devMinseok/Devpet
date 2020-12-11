@@ -26,45 +26,25 @@
 
 문의 및 피드백 메일 : qbq5000@gmail.com
 
-![Devpet](/README.assets/Devpet.png)
+<img src="/README.assets/Devpet.png" width="400"/>
 
 ## Feature
 
-### 피드
-<div>
-  <img src="/README.assets/피드.png" width="200" style="float: left; margin-right: 20px;"/>
-  <img src="/README.assets/게시물상세.png" width="200"/>
-</div>
+### 전체 UI
+<img src="/README.assets/DevpetUI.png"/>
 
-### 스토어
-<div>
-  <img src="/README.assets/스토어.png" width="200" style="float: left; margin-right: 20px;"/>
-  <img src="/README.assets/상품상세.png" width="200"/>
-</div>
+### 사용 방법
+<img src="/README.assets/Example1.png"/>
+<img src="/README.assets/Example2.png"/>
 
-### 프로필
-<div>
-  <img src="/README.assets/프로필.png" width="200" style="float: left; margin-right: 20px;"/>
-  <img src="/README.assets/좋아요목록.png" width="200"/>
-</div>
-
-### 내 목록
-<div>
-  <img src="/README.assets/찜목록.png" width="200" style="float: left; margin-right: 20px;"/>
-  <img src="/README.assets/구매목록.png" width="200"/>
-</div>
 ## Develop Environment
 
 - IDE: Xcode12
+- Framework: Cocoa
 - Language: Swift 5
-- Architecture: MVVM-C
+- Architecture: MVC
 
-## Open Source Library
+## Used Library
 
-- [NVActivityIndicatorView](https://github.com/ninjaprox/NVActivityIndicatorView)
-- [SwiftMessages](https://github.com/SwiftKickMobile/SwiftMessages)
-- [XLPagerTabStrip](https://github.com/xmartlabs/XLPagerTabStrip)
-- [KafkaRefresh](https://github.com/HsiaohuiHsiang/KafkaRefresh)
-- [ImageSlideshow](https://github.com/zvonicek/ImageSlideshow)
-- [SkeletonView](https://github.com/Juanpe/SkeletonView)
-- [RxTags](https://github.com/sake92/RxTags)
+- [Sourceful](https://github.com/twostraws/Sourceful)
+- [Realm](https://github.com/realm/realm-cocoa)
