@@ -34,7 +34,7 @@
 <img src="/README.assets/DevpetUI.png"/>
 
 ### 사용 방법
-<img src="/README.assets/Example1.png"/>
+<img src="/README.assets/Drag&Drop.png"/>
 <img src="/README.assets/Example2.png"/>
 
 ## Develop Environment
