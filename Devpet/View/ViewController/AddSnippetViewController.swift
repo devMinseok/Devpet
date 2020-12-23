@@ -28,7 +28,7 @@ class AddSnippetViewController: NSViewController {
         syntaxTextView.theme = DefaultSourceCodeTheme()
         
         syntaxTextView.text = """
-                                print("Hello, World!")
+                            // Write your code.
                             """
     }
     

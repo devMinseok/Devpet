@@ -868,7 +868,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="323"/>
+            <point key="canvasLocation" x="74" y="250"/>
         </scene>
         <!--Snippet Detail View Controller-->
         <scene sceneID="bbQ-dw-Y7O">
@@ -958,6 +958,7 @@ Gw
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <color key="contentTintColor" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="deleteButton:" target="hTI-e6-my9" id="c1A-wt-hdA"/>
                                 </connections>
@@ -991,7 +992,7 @@ Gw
                 </viewController>
                 <customObject id="7Mi-tA-B91" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="689" y="323"/>
+            <point key="canvasLocation" x="689" y="214"/>
         </scene>
         <!--Add Snippet View Controller-->
         <scene sceneID="2vd-FX-HzC">
@@ -1180,7 +1181,7 @@ Gw
                 </viewController>
                 <customObject id="utf-qt-AHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="801"/>
+            <point key="canvasLocation" x="76" y="679"/>
         </scene>
     </scenes>
     <resources>
