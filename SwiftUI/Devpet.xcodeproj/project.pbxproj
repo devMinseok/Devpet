@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F237F46725E94298007BBC5D /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F46625E94298007BBC5D /* StatusBarController.swift */; };
 		F2BA715E25E55E0F008555AF /* DevpetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA715D25E55E0F008555AF /* DevpetApp.swift */; };
 		F2BA716025E55E0F008555AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA715F25E55E0F008555AF /* ContentView.swift */; };
 		F2BA716225E55E11008555AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BA716125E55E11008555AF /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F237F46625E94298007BBC5D /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		F2BA715A25E55E0F008555AF /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2BA715D25E55E0F008555AF /* DevpetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetApp.swift; sourceTree = "<group>"; };
 		F2BA715F25E55E0F008555AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F237F46025E941AA007BBC5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2BA715F25E55E0F008555AF /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F237F46125E941BF007BBC5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F237F46225E941CC007BBC5D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F2BA716625E55E11008555AF /* Info.plist */,
+				F2BA716125E55E11008555AF /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F237F46525E94279007BBC5D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F237F46625E94298007BBC5D /* StatusBarController.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		F2BA715125E55E0F008555AF = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				F2BA715D25E55E0F008555AF /* DevpetApp.swift */,
-				F2BA715F25E55E0F008555AF /* ContentView.swift */,
-				F2BA716125E55E11008555AF /* Assets.xcassets */,
-				F2BA716625E55E11008555AF /* Info.plist */,
+				F237F46525E94279007BBC5D /* Manager */,
+				F237F46025E941AA007BBC5D /* Views */,
+				F237F46125E941BF007BBC5D /* Model */,
+				F237F46225E941CC007BBC5D /* Resource */,
 				F2BA716725E55E11008555AF /* Devpet.entitlements */,
 				F2BA716325E55E11008555AF /* Preview Content */,
 			);
@@ -141,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2BA716025E55E0F008555AF /* ContentView.swift in Sources */,
+				F237F46725E94298007BBC5D /* StatusBarController.swift in Sources */,
 				F2BA715E25E55E0F008555AF /* DevpetApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +311,7 @@
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Devpet/Info.plist;
+				INFOPLIST_FILE = Devpet/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -299,7 +335,7 @@
 				DEVELOPMENT_TEAM = 75FNRKTJ9S;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Devpet/Info.plist;
+				INFOPLIST_FILE = Devpet/Resource/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
