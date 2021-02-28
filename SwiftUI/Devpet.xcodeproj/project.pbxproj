@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F237F46725E94298007BBC5D /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F46625E94298007BBC5D /* StatusBarController.swift */; };
-		F2BA715E25E55E0F008555AF /* DevpetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA715D25E55E0F008555AF /* DevpetApp.swift */; };
-		F2BA716025E55E0F008555AF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BA715F25E55E0F008555AF /* ContentView.swift */; };
-		F2BA716225E55E11008555AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BA716125E55E11008555AF /* Assets.xcassets */; };
-		F2BA716525E55E11008555AF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2BA716425E55E11008555AF /* Preview Assets.xcassets */; };
+		F237F4A025EB6445007BBC5D /* DevpetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F49F25EB6445007BBC5D /* DevpetApp.swift */; };
+		F237F4A225EB6445007BBC5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4A125EB6445007BBC5D /* ContentView.swift */; };
+		F237F4A425EB6447007BBC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F237F4A325EB6447007BBC5D /* Assets.xcassets */; };
+		F237F4A725EB6447007BBC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F237F4A625EB6447007BBC5D /* Preview Assets.xcassets */; };
+		F237F4A925EB6447007BBC5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4A825EB6447007BBC5D /* Persistence.swift */; };
+		F237F4AC25EB6447007BBC5D /* Devpet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F237F4AA25EB6447007BBC5D /* Devpet.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F237F46625E94298007BBC5D /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
-		F2BA715A25E55E0F008555AF /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F2BA715D25E55E0F008555AF /* DevpetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetApp.swift; sourceTree = "<group>"; };
-		F2BA715F25E55E0F008555AF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F2BA716125E55E11008555AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F2BA716425E55E11008555AF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F2BA716625E55E11008555AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2BA716725E55E11008555AF /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
+		F237F49C25EB6445007BBC5D /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F237F49F25EB6445007BBC5D /* DevpetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetApp.swift; sourceTree = "<group>"; };
+		F237F4A125EB6445007BBC5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F237F4A325EB6447007BBC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F237F4A625EB6447007BBC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F237F4A825EB6447007BBC5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F237F4AB25EB6447007BBC5D /* Devpet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devpet.xcdatamodel; sourceTree = "<group>"; };
+		F237F4AD25EB6447007BBC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F237F4AE25EB6447007BBC5D /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F2BA715725E55E0F008555AF /* Frameworks */ = {
+		F237F49925EB6445007BBC5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,86 +38,87 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F237F46025E941AA007BBC5D /* Views */ = {
+		F237F49325EB6445007BBC5D = {
 			isa = PBXGroup;
 			children = (
-				F2BA715F25E55E0F008555AF /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		F237F46125E941BF007BBC5D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F237F46225E941CC007BBC5D /* Resource */ = {
-			isa = PBXGroup;
-			children = (
-				F2BA716625E55E11008555AF /* Info.plist */,
-				F2BA716125E55E11008555AF /* Assets.xcassets */,
-			);
-			path = Resource;
-			sourceTree = "<group>";
-		};
-		F237F46525E94279007BBC5D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				F237F46625E94298007BBC5D /* StatusBarController.swift */,
-			);
-			path = Manager;
-			sourceTree = "<group>";
-		};
-		F2BA715125E55E0F008555AF = {
-			isa = PBXGroup;
-			children = (
-				F2BA715C25E55E0F008555AF /* Devpet */,
-				F2BA715B25E55E0F008555AF /* Products */,
+				F237F49E25EB6445007BBC5D /* Devpet */,
+				F237F49D25EB6445007BBC5D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		F2BA715B25E55E0F008555AF /* Products */ = {
+		F237F49D25EB6445007BBC5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2BA715A25E55E0F008555AF /* Devpet.app */,
+				F237F49C25EB6445007BBC5D /* Devpet.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2BA715C25E55E0F008555AF /* Devpet */ = {
+		F237F49E25EB6445007BBC5D /* Devpet */ = {
 			isa = PBXGroup;
 			children = (
-				F2BA715D25E55E0F008555AF /* DevpetApp.swift */,
-				F237F46525E94279007BBC5D /* Manager */,
-				F237F46025E941AA007BBC5D /* Views */,
-				F237F46125E941BF007BBC5D /* Model */,
-				F237F46225E941CC007BBC5D /* Resource */,
-				F2BA716725E55E11008555AF /* Devpet.entitlements */,
-				F2BA716325E55E11008555AF /* Preview Content */,
+				F237F49F25EB6445007BBC5D /* DevpetApp.swift */,
+				F237F4B725EB65CF007BBC5D /* Manager */,
+				F237F4B925EB65EE007BBC5D /* Model */,
+				F237F4B825EB65E9007BBC5D /* Views */,
+				F237F4BA25EB65F3007BBC5D /* Resource */,
+				F237F4A825EB6447007BBC5D /* Persistence.swift */,
+				F237F4AE25EB6447007BBC5D /* Devpet.entitlements */,
+				F237F4A525EB6447007BBC5D /* Preview Content */,
 			);
 			path = Devpet;
 			sourceTree = "<group>";
 		};
-		F2BA716325E55E11008555AF /* Preview Content */ = {
+		F237F4A525EB6447007BBC5D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				F2BA716425E55E11008555AF /* Preview Assets.xcassets */,
+				F237F4A625EB6447007BBC5D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F237F4B725EB65CF007BBC5D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		F237F4B825EB65E9007BBC5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F237F4A125EB6445007BBC5D /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F237F4B925EB65EE007BBC5D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F237F4AA25EB6447007BBC5D /* Devpet.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F237F4BA25EB65F3007BBC5D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F237F4A325EB6447007BBC5D /* Assets.xcassets */,
+				F237F4AD25EB6447007BBC5D /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2BA715925E55E0F008555AF /* Devpet */ = {
+		F237F49B25EB6445007BBC5D /* Devpet */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2BA716A25E55E11008555AF /* Build configuration list for PBXNativeTarget "Devpet" */;
+			buildConfigurationList = F237F4B125EB6447007BBC5D /* Build configuration list for PBXNativeTarget "Devpet" */;
 			buildPhases = (
-				F2BA715625E55E0F008555AF /* Sources */,
-				F2BA715725E55E0F008555AF /* Frameworks */,
-				F2BA715825E55E0F008555AF /* Resources */,
+				F237F49825EB6445007BBC5D /* Sources */,
+				F237F49925EB6445007BBC5D /* Frameworks */,
+				F237F49A25EB6445007BBC5D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -123,24 +126,24 @@
 			);
 			name = Devpet;
 			productName = Devpet;
-			productReference = F2BA715A25E55E0F008555AF /* Devpet.app */;
+			productReference = F237F49C25EB6445007BBC5D /* Devpet.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		F2BA715225E55E0F008555AF /* Project object */ = {
+		F237F49425EB6445007BBC5D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					F2BA715925E55E0F008555AF = {
+					F237F49B25EB6445007BBC5D = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = F2BA715525E55E0F008555AF /* Build configuration list for PBXProject "Devpet" */;
+			buildConfigurationList = F237F49725EB6445007BBC5D /* Build configuration list for PBXProject "Devpet" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,43 +151,44 @@
 				en,
 				Base,
 			);
-			mainGroup = F2BA715125E55E0F008555AF;
-			productRefGroup = F2BA715B25E55E0F008555AF /* Products */;
+			mainGroup = F237F49325EB6445007BBC5D;
+			productRefGroup = F237F49D25EB6445007BBC5D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2BA715925E55E0F008555AF /* Devpet */,
+				F237F49B25EB6445007BBC5D /* Devpet */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		F2BA715825E55E0F008555AF /* Resources */ = {
+		F237F49A25EB6445007BBC5D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BA716525E55E11008555AF /* Preview Assets.xcassets in Resources */,
-				F2BA716225E55E11008555AF /* Assets.xcassets in Resources */,
+				F237F4A725EB6447007BBC5D /* Preview Assets.xcassets in Resources */,
+				F237F4A425EB6447007BBC5D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		F2BA715625E55E0F008555AF /* Sources */ = {
+		F237F49825EB6445007BBC5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2BA716025E55E0F008555AF /* ContentView.swift in Sources */,
-				F237F46725E94298007BBC5D /* StatusBarController.swift in Sources */,
-				F2BA715E25E55E0F008555AF /* DevpetApp.swift in Sources */,
+				F237F4A925EB6447007BBC5D /* Persistence.swift in Sources */,
+				F237F4A225EB6445007BBC5D /* ContentView.swift in Sources */,
+				F237F4A025EB6445007BBC5D /* DevpetApp.swift in Sources */,
+				F237F4AC25EB6447007BBC5D /* Devpet.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		F2BA716825E55E11008555AF /* Debug */ = {
+		F237F4AF25EB6447007BBC5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		F2BA716925E55E11008555AF /* Release */ = {
+		F237F4B025EB6447007BBC5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +303,7 @@
 			};
 			name = Release;
 		};
-		F2BA716B25E55E11008555AF /* Debug */ = {
+		F237F4B225EB6447007BBC5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -323,7 +327,7 @@
 			};
 			name = Debug;
 		};
-		F2BA716C25E55E11008555AF /* Release */ = {
+		F237F4B325EB6447007BBC5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -350,25 +354,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2BA715525E55E0F008555AF /* Build configuration list for PBXProject "Devpet" */ = {
+		F237F49725EB6445007BBC5D /* Build configuration list for PBXProject "Devpet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2BA716825E55E11008555AF /* Debug */,
-				F2BA716925E55E11008555AF /* Release */,
+				F237F4AF25EB6447007BBC5D /* Debug */,
+				F237F4B025EB6447007BBC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2BA716A25E55E11008555AF /* Build configuration list for PBXNativeTarget "Devpet" */ = {
+		F237F4B125EB6447007BBC5D /* Build configuration list for PBXNativeTarget "Devpet" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F2BA716B25E55E11008555AF /* Debug */,
-				F2BA716C25E55E11008555AF /* Release */,
+				F237F4B225EB6447007BBC5D /* Debug */,
+				F237F4B325EB6447007BBC5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F237F4AA25EB6447007BBC5D /* Devpet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F237F4AB25EB6447007BBC5D /* Devpet.xcdatamodel */,
+			);
+			currentVersion = F237F4AB25EB6447007BBC5D /* Devpet.xcdatamodel */;
+			path = Devpet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = F2BA715225E55E0F008555AF /* Project object */;
+	rootObject = F237F49425EB6445007BBC5D /* Project object */;
 }
