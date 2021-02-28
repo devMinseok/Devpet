@@ -17,17 +17,51 @@ struct SnippetsView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        List {
-            ForEach(items) { item in
-                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//        List {
+//            ForEach(items) { item in
+//                Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+//            }
+//            .onDelete(perform: deleteItems)
+//        }
+//        .toolbar {
+//            Button(action: addItem) {
+//                Label("Add Item", systemImage: "plus")
+//            }
+//        }
+        VStack {
+            HStack {
+                Text("Devpet")
+                    .font(.headline)
+                    .foregroundColor(.gray)
+                    .padding()
+                Spacer()
             }
-            .onDelete(perform: deleteItems)
-        }
-        .toolbar {
-            Button(action: addItem) {
-                Label("Add Item", systemImage: "plus")
+            
+            List {
+                
+            }
+            
+            HStack {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "plus")
+                })
+                .buttonStyle(PlainButtonStyle())
+                .frame(width: 30, height: 30)
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "gear")
+                })
+                .buttonStyle(PlainButtonStyle())
+                .frame(width: 30, height: 30)
             }
         }
+        .frame(width: 200, height: 300)
     }
 
     private func addItem() {
