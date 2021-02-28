@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  SnippetsView.swift
 //  Devpet
 //
 //  Created by 강민석 on 2021/02/28.
@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct SnippetsView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -71,6 +71,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        SnippetsView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

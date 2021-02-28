@@ -8,23 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F237F4A025EB6445007BBC5D /* DevpetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F49F25EB6445007BBC5D /* DevpetApp.swift */; };
-		F237F4A225EB6445007BBC5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4A125EB6445007BBC5D /* ContentView.swift */; };
 		F237F4A425EB6447007BBC5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F237F4A325EB6447007BBC5D /* Assets.xcassets */; };
 		F237F4A725EB6447007BBC5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F237F4A625EB6447007BBC5D /* Preview Assets.xcassets */; };
 		F237F4A925EB6447007BBC5D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4A825EB6447007BBC5D /* Persistence.swift */; };
 		F237F4AC25EB6447007BBC5D /* Devpet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F237F4AA25EB6447007BBC5D /* Devpet.xcdatamodeld */; };
+		F237F4BD25EB6B85007BBC5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4BC25EB6B85007BBC5D /* AppDelegate.swift */; };
+		F237F4C125EB6C51007BBC5D /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4C025EB6C51007BBC5D /* StatusBarController.swift */; };
+		F237F4C425EB71C4007BBC5D /* SnippetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237F4C325EB71C4007BBC5D /* SnippetsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F237F49C25EB6445007BBC5D /* Devpet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Devpet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F237F49F25EB6445007BBC5D /* DevpetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevpetApp.swift; sourceTree = "<group>"; };
-		F237F4A125EB6445007BBC5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F237F4A325EB6447007BBC5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F237F4A625EB6447007BBC5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F237F4A825EB6447007BBC5D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F237F4AB25EB6447007BBC5D /* Devpet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Devpet.xcdatamodel; sourceTree = "<group>"; };
 		F237F4AD25EB6447007BBC5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F237F4AE25EB6447007BBC5D /* Devpet.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Devpet.entitlements; sourceTree = "<group>"; };
+		F237F4BC25EB6B85007BBC5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F237F4C025EB6C51007BBC5D /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		F237F4C325EB71C4007BBC5D /* SnippetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippetsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F237F49F25EB6445007BBC5D /* DevpetApp.swift */,
+				F237F4BC25EB6B85007BBC5D /* AppDelegate.swift */,
 				F237F4B725EB65CF007BBC5D /* Manager */,
 				F237F4B925EB65EE007BBC5D /* Model */,
 				F237F4B825EB65E9007BBC5D /* Views */,
@@ -80,6 +85,7 @@
 		F237F4B725EB65CF007BBC5D /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				F237F4C025EB6C51007BBC5D /* StatusBarController.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -87,7 +93,7 @@
 		F237F4B825EB65E9007BBC5D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F237F4A125EB6445007BBC5D /* ContentView.swift */,
+				F237F4C325EB71C4007BBC5D /* SnippetsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,8 +185,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F237F4A925EB6447007BBC5D /* Persistence.swift in Sources */,
-				F237F4A225EB6445007BBC5D /* ContentView.swift in Sources */,
+				F237F4C125EB6C51007BBC5D /* StatusBarController.swift in Sources */,
 				F237F4A025EB6445007BBC5D /* DevpetApp.swift in Sources */,
+				F237F4BD25EB6B85007BBC5D /* AppDelegate.swift in Sources */,
+				F237F4C425EB71C4007BBC5D /* SnippetsView.swift in Sources */,
 				F237F4AC25EB6447007BBC5D /* Devpet.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

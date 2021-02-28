@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct DevpetApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
+    init() {
+        // Customize delegate here.
+        appDelegate.myProperty = ""
+    }
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+        Settings {
+            EmptyView()
         }
     }
 }
